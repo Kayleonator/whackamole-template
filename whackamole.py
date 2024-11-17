@@ -20,18 +20,15 @@ def main():
                     row = y // 32
                     col = x // 32
                     mouse_pos = (col, row)
-                    print(mouse_pos)
                     if mouse_pos == init_mole_pos and first_run:
                         first_run = False
                         mole_x = (random.randrange(0, 21))
                         mole_y = (random.randrange(0, 17))
                         mole_pos = (mole_x, mole_y)
-                        print(mole_pos)
                     elif mouse_pos == mole_pos:
                         mole_x = (random.randrange(0, 20))
                         mole_y = (random.randrange(0, 16))
                         mole_pos = (mole_x, mole_y)
-                        print(mole_pos)
                     else:
                         continue
                 screen.fill((232, 226, 176))
